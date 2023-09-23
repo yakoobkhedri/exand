@@ -20,11 +20,6 @@ body {
     font-family: "IRANSans-Regular";
     user-select: none;
     background-color: #0c0f14;
-    overflow-x: hidden;
-}
-
-body.pannel {
-    overflow-x: visible;
 }
 
 .font-bold {
@@ -154,6 +149,15 @@ a {
 .w-40 {
     width: 10rem;
 }
+.h-41 {
+    height: 41px
+}
+.w-41 {
+    width: 41px;
+}
+.w-51 {
+    width: 51px;
+}
 .h-51 {
     height: 51px;
 }
@@ -232,7 +236,9 @@ a {
 .w-355 {
     width: 355px;
 }
-
+.w-500 {
+    width: 500px;
+}
 .w-574 {
     width: 574px;
 }
@@ -310,7 +316,9 @@ a {
 .top-101 {
     top: 100px;
 }
-
+.top-205 {
+    top: -205px;
+}
 .top-250 {
     top: 250px;
 }
@@ -333,6 +341,9 @@ a {
 
 .bottom-45 {
     bottom: -45px;
+}
+.bottom-40{
+    bottom: -40px !important;
 }
 .mb-22{
     margin-bottom: 22px;
