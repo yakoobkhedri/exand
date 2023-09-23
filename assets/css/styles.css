@@ -97,7 +97,9 @@ a {
 .cursor-pointer {
     cursor: pointer;
 }
-
+.outline-none{
+    outline: none;
+}
 .top-124 {
     top: 124px;
 }
@@ -185,6 +187,12 @@ a {
 }
 .w-142 {
     width: 142px;
+}
+.w-150 {
+    width: 150px;
+}
+.h-150 {
+    height: 150px;
 }
 .h-101 {
     height: 101px;
