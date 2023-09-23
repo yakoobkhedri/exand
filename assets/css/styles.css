@@ -14,7 +14,7 @@ html {
 }
 .text-stroke{
     color:  #0c0f14;
-	-webkit-text-stroke: 1px white;
+	-webkit-text-stroke: 1px #a9a9aa;
 }
 body {
     font-family: "IRANSans-Regular";
@@ -77,7 +77,9 @@ body {
 .bg-orange2 {
     background-color: #faf4f4;
 }
-
+.bg-dark2{
+    background-color: #171d26;
+}
 .border-main {
     border: 1px solid #67fb94;
 }
@@ -322,7 +324,9 @@ a {
 .top-250 {
     top: 250px;
 }
-
+.right-38 {
+    right: 38px;
+}
 .right-65 {
     right: 65px;
 }
@@ -338,12 +342,17 @@ a {
 .left-78 {
     left: -78px;
 }
-
+.bottom-23 {
+    bottom: -23px;
+}
 .bottom-45 {
     bottom: -45px;
 }
 .bottom-40{
     bottom: -40px !important;
+}
+.bottom-70{
+    bottom: -70px !important;
 }
 .mb-22{
     margin-bottom: 22px;
@@ -384,6 +393,9 @@ a {
 .border-b-gray {
     border-bottom: 1px solid #1d2227!important;
 }
+.border-t-gray{
+    border-top: 1px solid #1d2227!important;
+}
 .border-gray {
     border: 1px solid #1d2227!important;
 }
@@ -407,14 +419,17 @@ a {
 
 .swiper-pagination-bullet {
     background-color: transparent;
-    border: 1px solid #c9a759;
-    width: 1rem;
-    height: 1rem;
+    border: 1px solid #1d2227 ;
+    width: 12px;
+    height: 12px;
     opacity: 100%;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #c9a759;
+    background-color: #67fb94;
+    border-radius: 4px;
 }
 
 .swiper-button-prev,

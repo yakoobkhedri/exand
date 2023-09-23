@@ -31,3 +31,32 @@ var services = new Swiper(".services", {
         }
     }
 });
+var testimonials = new Swiper(".testimonials", {
+    slidesPerView: 1,
+    loop:true,
+    spaceBetween: 30,
+    breakpoints: {
+        992: {
+            slidesPerView: 2
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+var blog = new Swiper(".blog", {
+    slidesPerView: 1,
+    loop:true,
+    spaceBetween: 30,
+    breakpoints: {
+        992: {
+            slidesPerView: 2
+        },
+        1200: {
+            slidesPerView: 3
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination2",
+    },
+});
