@@ -517,10 +517,10 @@ header ul li:hover svg{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.skills a:hover{
-    color: black;
+.skills a:hover,  #services .swiper-slide>div:hover a.bg-second{
+    color: black!important;
 }
-.skills a::before {
+.skills a::before,#services .swiper-slide>div a.bg-second::before {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -549,7 +549,7 @@ header ul li:hover svg{
     transition: transform .4s cubic-bezier(.3,1,.8,1);
     transform: translateX(-90%);
   }
-  .skills a:hover::before {
+  .skills a:hover::before,#services .swiper-slide>div:hover a.bg-second:before {
     -webkit-transform: translate3d(0%,0,0)skew(45deg);
     -khtml-transform: translate3d(0%,0,0)skew(45deg);
     -moz-transform: translate3d(0%,0,0)skew(45deg);
@@ -611,6 +611,9 @@ header ul li:hover svg{
   #services .swiper-slide>div:hover .hover-lines::before{
     transition: width .1s cubic-bezier(.19,1,.22,1)340ms;
   width: 50%;
+  }
+#services .swiper-slide>div a.bg-second::before {
+    z-index: 2;
   }
 @media only screen and (max-width:1200px) {
     
