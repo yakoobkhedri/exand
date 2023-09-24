@@ -78,12 +78,14 @@ body {
     background-color: #faf4f4;
 }
 .bg-dark2{
-    background-color: #171d26;
+    background-color: #1953a5;
 }
 .border-main {
     border: 1px solid #158be5!important;
 }
-
+.special-hue-rotate{
+    filter: hue-rotate(55deg);
+}
 .transition {
     transition: all .4s;
 }
@@ -422,13 +424,13 @@ a {
 }
 
 .border-b-gray {
-    border-bottom: 1px solid lightgray!important;
+    border-bottom: 1px solid rgb(88, 88, 88)!important;
 }
 .border-t-gray{
-    border-top: 1px solid lightgray!important;
+    border-top: 1px solid rgb(88, 88, 88)!important;
 }
 .border-gray {
-    border: 1px solid lightgray!important;
+    border: 1px solid rgb(88, 88, 88)!important;
 }
 .border-dashed {
     border: 1px dashed;
@@ -497,7 +499,7 @@ input[type='number'] {
     text-align: left;
 }
 /* header */
-header ul li:hover a,.swiper.services a.text-gray:hover, #gallery .row .col-lg-8 a.h4:hover, #gallery .row .col-lg-4 a.h4:hover,.swiper.services .swiper-slide:hover .bi-share-fill{
+header ul li:hover a,footer li a:hover,.swiper.services a.text-gray:hover, #gallery .row .col-lg-8 a.h4:hover, #gallery .row .col-lg-4 a.h4:hover,.swiper.services .swiper-slide:hover .bi-share-fill{
     color: #158be5!important;
 }
 header ul li:hover svg{
