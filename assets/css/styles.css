@@ -517,7 +517,7 @@ header ul li:hover svg{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.skills a:hover,  #services .swiper-slide>div:hover a.bg-second{
+.skills a:hover,  #services .swiper-slide>div:hover a.bg-second,#services .swiper-slide>div:hover a.border-gray{
     color: black!important;
 }
 .skills a::before,#services .swiper-slide>div a.bg-second::before {
@@ -614,6 +614,31 @@ header ul li:hover svg{
   }
 #services .swiper-slide>div a.bg-second::before {
     z-index: 2;
+  }
+  #services .swiper-slide>div a.border-gray {
+    position: relative;
+    z-index: 9;
+  }
+  #services .swiper-slide>div a.border-gray::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: #67fb94;
+    border-radius: 50%;
+    transition: all .4s;
+    z-index: -1;
+  }
+  #services .swiper-slide>div:hover a.border-gray::before {
+    width: 100%;
+    height: 100%;
+  }
+  #services .swiper-slide>div:hover a.border-gray:hover svg{
+    transform: rotate(45deg);
+  }
+  #services .swiper-slide>div:hover img{
+    filter: brightness(0)invert(1);
+    transform: translateY(-9px);
   }
 @media only screen and (max-width:1200px) {
     
