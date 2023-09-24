@@ -474,6 +474,12 @@ input[type='number'] {
     text-align: left;
 }
 /* header */
+header ul li:hover a{
+    color: #67fb94!important;
+}
+header ul li:hover svg{
+    transform: rotate(-45deg);
+}
 /* about */
 .bg-pttern1{
     background-image: url('../img/Pettern-1.png');
@@ -482,20 +488,43 @@ input[type='number'] {
     background-repeat: no-repeat;
 }
 
-@media only screen and (min-width:1200px) {
-
-}
 @media only screen and (max-width:1200px) {
     
 }
 @media only screen and (max-width:992px) {
+    #banner .fs-120 {
+        font-size: 40px;
+      }
+      #contact .h-150 {
+        height: 50px;
+      }
+      #contact .w-150 {
+        width: 60px;
+        border-radius: 5px!important;
+      }
 }
 
 @media only screen and (max-width:768px) {
-   
+    .Mask{
+        width: 55px;
+    }
+    #banner .w-355{
+       width: 290px;
+    }
+    #about .me-9 {
+        margin-right: auto;
+      }
 }
 @media only screen and (max-width:576px) {
-   
+   #banner .w-184 {
+    width: 112px;
+  }
+  #video-banner .w-101 {
+    width: 60px;
+  }
+  #video-banner .h-101 {
+    height: 60px;
+  }
 }
 @media only screen and (max-width:400px) {
   
