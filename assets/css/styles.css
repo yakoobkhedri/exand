@@ -95,7 +95,9 @@ body {
 .border-main {
     border: 1px solid #158be5 !important;
 }
-
+.border-b-main {
+    border-bottom: 2px solid #158be5 !important;
+}
 .special-hue-rotate {
     filter: hue-rotate(55deg);
 }
@@ -598,6 +600,7 @@ input[type='number'] {
 
 /* header */
 header ul li:hover a,
+.site-social a:hover svg,
 footer a:hover,
 #blog .swiper-slide a:hover p,
 #blog .swiper-slide a:hover,
