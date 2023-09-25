@@ -25,7 +25,9 @@ body {
 .font-bold {
     font-family: "IRANSans-Bold";
 }
-
+.body-bg{
+    background-color: #011f4b;
+}
 .main-text {
     color: #158be5;
 }
@@ -113,7 +115,13 @@ a {
 .h-2 {
     height: 2px;
 }
+.w-9 {
+    width: 9px;
+}
 
+.h-9 {
+    height: 9px;
+}
 .w-10 {
     width: 40px;
 }
@@ -308,7 +316,9 @@ a {
 .z-90 {
     z-index: 90;
 }
-
+.top-4{
+    top: -4px;
+}
 .top-18 {
     top: 18%;
 }
@@ -339,6 +349,9 @@ a {
 .top-250 {
     top: 250px;
 }
+.right-5{
+    right: -5px;
+}
 .right-38 {
     right: 38px;
 }
@@ -349,13 +362,18 @@ a {
 .right-78 {
     right: -78px;
 }
-
+.left-5{
+    left: -5px;
+}
 .left-65 {
     left: 65px;
 }
 
 .left-78 {
     left: -78px;
+}
+.bottom-4{
+    bottom: -4px;
 }
 .bottom-23 {
     bottom: -23px;
@@ -516,6 +534,10 @@ header ul li:hover svg{
 }
 .contactHamIcon:hover >div:last-child{
     transform:rotate(-45deg) translateY(-10px)
+}
+/* brands */
+#brands .swiper-slide:hover > div{
+    transform: translateY(-50px);
 }
 /* about */
 .bg-pttern1{
