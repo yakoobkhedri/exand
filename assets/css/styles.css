@@ -1027,9 +1027,6 @@ header ul li:hover a svg {
     #banner .w-355 {
         width: 290px;
     }
-    #gallery .row .col-lg-8:hover a.rounded-circle {
-        top: 18%;
-    }
 }
 
 @media only screen and (max-width:576px) {
@@ -1043,6 +1040,9 @@ header ul li:hover a svg {
 
     #video-banner .h-101 {
         height: 60px;
+    }
+    #gallery .row .col-lg-8:hover a.rounded-circle {
+        top: 10%;
     }
 }
 
