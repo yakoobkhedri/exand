@@ -60,3 +60,13 @@ var blog = new Swiper(".blog", {
         el: ".swiper-pagination2",
     },
 });
+
+// hover bg
+
+let whyUsRow=Array.from(document.querySelectorAll('.why-us-row > div'));
+let whyUsImgs=Array.from(document.querySelectorAll('img[alt="why-us"]'));
+let whyUsBigImg=document.getElementById('why-us-bigImg')
+
+// whyUsRow[0].addEventListener('click',function () {
+//     whyUsBigImg.style.backgroundImage = "url('assets/img/image-post-10-980x700.jpg')"; 
+// })

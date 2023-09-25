@@ -602,6 +602,7 @@ footer a:hover,
 #blog .swiper-slide a:hover p,
 #blog .swiper-slide a:hover,
 .swiper.services a.text-gray:hover,
+#why-us a:hover,
 #gallery .row .col-lg-8 a.h4:hover,
 #gallery .row .col-lg-4 a.h4:hover,
 .swiper.services .swiper-slide:hover .bi-share-fill {
@@ -846,7 +847,13 @@ header ul li:hover svg {
 .why-us-row>div:hover .rounded-circle {
     background-color: #158be5;
 }
-
+.why-us-bigImg{
+    background-image: url('../img/image-post-10-980x700.jpg');
+    background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* gallery */
 #gallery .row .col-lg-8:hover a.rounded-circle,
 #gallery .row .col-lg-4:hover a.rounded-circle {
     left: 47%;
