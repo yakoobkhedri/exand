@@ -15,33 +15,39 @@
 
   <!-- header -->
 
-  <header class="h-105 border-bottom border-b-gray">
+  <header class="h-105 border-bottom border-b-gray position-sticky top-0 body-bg z-20">
     <nav class="container-fluid h-100">
       <div class="d-flex align-items-center h-100 justify-content-between">
         <!-- menu -->
-        <ul class="list-unstyled m-0 p-0 d-xl-flex d-none align-items-center gap-3 fw-bold">
+        <ul class="list-unstyled m-0 p-0 d-flex align-items-center gap-3 fw-bold" id="menu">
+          <li class="d-xl-none mb-2 border-bottom-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="d-block cursor-pointer w-142 flex-shrink-0"><img alt="logo" src="assets/img/logo.png" class="img-fluid"></a>
+              <svg data-bs-dismiss="offcanvas" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-x-lg text-white cursor-pointer" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+              </svg>
+            </div>
+          </li>
+          <li class="mb-2 border-bottom-0 d-xl-none">
+            <form class="d-flex align-items-center gap-2 rounded-pill bg-second text-white px-3 py-2">
+              <input class="bg-transparent outline-none border-0 flex-grow-1 w-100 text-white" placeholder="Search...">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search main-text cursor-pointer flex-shrink-0" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </form>
+          </li>
           <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
               <p class="mb-0">Home</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                class="bi bi-plus main-text transition" viewBox="0 0 16 16">
-                <path
-                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-              </svg>
+              class="bi bi-plus main-text transition" viewBox="0 0 16 16">
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg>
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
-              <p class="mb-0">Pages</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                class="bi bi-plus main-text transition" viewBox="0 0 16 16">
-                <path
-                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
               <p class="mb-0">Services</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-plus main-text transition" viewBox="0 0 16 16">
@@ -51,7 +57,17 @@
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
+              <p class="mb-0">About US</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-plus main-text transition" viewBox="0 0 16 16">
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
               <p class="mb-0">Portfolio</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-plus main-text transition" viewBox="0 0 16 16">
@@ -61,8 +77,8 @@
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
-              <p class="mb-0">Blog</p>
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
+              <p class="mb-0">Contact Us</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-plus main-text transition" viewBox="0 0 16 16">
                 <path
@@ -71,8 +87,8 @@
             </a>
           </li>
           <li>
-            <a class="d-flex align-items-center gap-1 cursor-pointer text-white">
-              <p class="mb-0">Shop</p>
+            <a class="d-flex align-items-center justify-content-between justify-content-xl-start gap-1 cursor-pointer text-white">
+              <p class="mb-0">Blog</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-plus main-text transition" viewBox="0 0 16 16">
                 <path
@@ -228,7 +244,7 @@
           </div>
         </div>
         <!-- hamburger icon -->
-        <div class="cursor-pointer main-text border rounded-3 border-main d-xl-none">
+        <div class="cursor-pointer main-text border rounded-3 border-main d-xl-none" id="hamIcon">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"

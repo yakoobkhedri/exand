@@ -1,3 +1,13 @@
+// hamIcon
+
+let hamIcon=document.getElementById('hamIcon');
+let menu=document.getElementById('menu');
+
+hamIcon.addEventListener('click',function () {
+    menu.classList.toggle('active');
+})
+
+
 // swiper
 var brands = new Swiper(".brands", {
     slidesPerView: 2,
