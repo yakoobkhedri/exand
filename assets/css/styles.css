@@ -320,6 +320,9 @@ a {
 .top-30 {
     top: 30px;
 }
+.top-33{
+    top: -33px;
+}
 .top-40 {
     top: 40%;
 }
@@ -499,7 +502,7 @@ input[type='number'] {
     text-align: left;
 }
 /* header */
-header ul li:hover a,footer li a:hover,.swiper.services a.text-gray:hover, #gallery .row .col-lg-8 a.h4:hover, #gallery .row .col-lg-4 a.h4:hover,.swiper.services .swiper-slide:hover .bi-share-fill{
+header ul li:hover a,footer a:hover,#blog .swiper-slide a:hover p,#blog .swiper-slide a:hover,.swiper.services a.text-gray:hover, #gallery .row .col-lg-8 a.h4:hover, #gallery .row .col-lg-4 a.h4:hover,.swiper.services .swiper-slide:hover .bi-share-fill{
     color: #158be5!important;
 }
 header ul li:hover svg{
@@ -670,11 +673,11 @@ header ul li:hover svg{
   #gallery .row .col-lg-8:hover a.rounded-pill, #gallery .row .col-lg-4:hover a.rounded-pill{
    background-color: #158be5!important;
   }
-  #gallery .row .col-lg-8 img, #gallery .row .col-lg-4 img,.swiper.services .swiper-slide img{
+  #gallery .row .col-lg-8 img, #gallery .row .col-lg-4 img,.swiper.services .swiper-slide img,#blog .swiper-slide img[alt="blog"]{
     transform: scale(1.2);
     transition: all .4s;
    }
-  #gallery .row .col-lg-8:hover img, #gallery .row .col-lg-4:hover img,.swiper.services .swiper-slide:hover img{
+  #gallery .row .col-lg-8:hover img, #gallery .row .col-lg-4:hover img,.swiper.services .swiper-slide:hover img,#blog .swiper-slide:hover img[alt="blog"]{
     transform: scale(1);
     opacity: .7;
    }
@@ -697,6 +700,23 @@ header ul li:hover svg{
    }
    .swiper.services .swiper-slide:hover .team-social{
     opacity: 100%;
+   }
+   #blog .swiper-slide .position-relative.overflow-hidden span{
+    opacity: 0;
+    transition: all .4s;
+    z-index: 9;
+   }
+   #blog .swiper-slide:hover .position-relative.overflow-hidden span{
+    opacity: 100%;
+    margin-left: 14px!important;
+   }
+   /* contact */
+   .subscribe:hover{
+    background-image: linear-gradient(to top,#158be5,#1953a5);
+   }
+   .subscribe:hover svg{
+    margin-bottom: 13px;
+    margin-left: 13px!important;
    }
 @media only screen and (max-width:1200px) {
     
