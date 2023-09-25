@@ -27,7 +27,9 @@ body {
 .font-bold {
     font-family: "IRANSans-Bold";
 }
-
+.bg-black{
+    background-color: black;
+}
 .body-bg {
     background-color: #011f4b;
 }
@@ -599,7 +601,15 @@ input[type='email'],
 input[type='number'] {
     text-align: left;
 }
-
+#overlay{
+    opacity: 0;
+    z-index: -3;
+    transition: all .4s;
+}
+#overlay.active{
+    opacity: .5;
+    z-index: 20;
+}
 /* header */
 header ul li:hover a,
 .site-social a:hover svg,
@@ -623,11 +633,11 @@ header ul li:hover a svg {
 }
 
 .contactHamIcon:hover>div:first-child {
-    transform:rotate(45deg) translateY(20px);
+    transform:rotate(45deg) translateY(13px) translateX(10px);
 }
 
 .contactHamIcon:hover>div:last-child {
-    transform: rotate(-45deg) translateY(-20px);
+    transform: rotate(-45deg) translateY(-11px) translateX(6px);
 }
 
 /* video banner */
@@ -955,6 +965,7 @@ header ul li:hover a svg {
         top: 0;
         left: -330px;
         bottom: 0;
+        z-index: 99;
         width: 300px;
         background-color: #011f4b;
         display: block!important;

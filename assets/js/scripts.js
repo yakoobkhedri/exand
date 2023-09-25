@@ -2,9 +2,20 @@
 
 let hamIcon=document.getElementById('hamIcon');
 let menu=document.getElementById('menu');
+let closeMenu=document.getElementById('close');
+let overlay=document.getElementById('overlay');
 
 hamIcon.addEventListener('click',function () {
     menu.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+closeMenu.addEventListener('click',function () {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+});
+overlay.addEventListener('click',function () {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
 })
 
 
