@@ -1027,6 +1027,9 @@ header ul li:hover a svg {
     #banner .w-355 {
         width: 290px;
     }
+    #about img.w-50{
+        width: 100%!important;
+    }
 }
 
 @media only screen and (max-width:576px) {
