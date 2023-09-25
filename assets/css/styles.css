@@ -114,7 +114,7 @@ a {
     transition: all .4s;
 }
 
-.cursor-pointer {
+.cursor-pointer,.contactHamIcon {
     cursor: pointer;
 }
 
@@ -483,7 +483,9 @@ a {
 .rotation2 {
     animation: rotation2 3s infinite;
 }
-
+.rail {
+    animation: rail 6s infinite linear;
+}
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -503,7 +505,17 @@ a {
         transform: rotate(90deg);
     }
 }
-
+@keyframes rail {
+   0% {
+        transform: translateX(-120px);
+    }
+    50% {
+        transform: translateX(-40px);
+    }
+    100% {
+        transform: translateX(-120px);
+    }
+}
 .rounded-lg {
     border-radius: .5rem;
 }
@@ -628,18 +640,26 @@ header ul li:hover a svg {
     transform: rotate(-45deg);
 }
 
-.contactHamIcon:hover>div:nth-child(2) {
+.contactHamIcon:hover>div:nth-child(2),.offcanvas .contactHamIcon>div:nth-child(2),#close.contactHamIcon>div:nth-child(2) {
     opacity: 0!important;
 }
 
-.contactHamIcon:hover>div:first-child {
+.contactHamIcon:hover>div:first-child,.offcanvas .contactHamIcon>div:first-child,#close.contactHamIcon>div:first-child {
     transform:rotate(45deg) translateY(13px) translateX(10px);
 }
 
-.contactHamIcon:hover>div:last-child {
+.contactHamIcon:hover>div:last-child,.offcanvas .contactHamIcon>div:last-child,#close.contactHamIcon>div:last-child {
     transform: rotate(-45deg) translateY(-11px) translateX(6px);
 }
-
+.offcanvas .contactHamIcon:hover>div:first-child,.offcanvas .contactHamIcon:hover>div:last-child,#close.contactHamIcon:hover>div:first-child{
+    transform:rotate(0deg) translateY(25px) translateX(0px);
+}
+.offcanvas .contactHamIcon:hover>div:last-child,#close.contactHamIcon:hover>div:last-child{
+    transform:translateY(-3px);
+}
+.offcanvas .contactHamIcon:hover{
+    background-color: #1953a5;
+}
 /* video banner */
 .play-video {
     display: block;
@@ -756,7 +776,6 @@ header ul li:hover a svg {
     -o-transform: translate3d(0%, 0, 0)skew(45deg);
     transform: translate3d(0%, 0, 0)skew(45deg);
 }
-
 /* services */
 .hover-lines {
     -webkit-border-radius: 5px;
@@ -1021,6 +1040,9 @@ header ul li:hover a svg {
 
     #video-banner .h-101 {
         height: 60px;
+    }
+    #gallery .row .col-lg-8:hover a.rounded-circle {
+        top: 18%;
     }
 }
 
