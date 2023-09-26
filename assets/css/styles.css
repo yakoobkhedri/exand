@@ -501,6 +501,9 @@ a {
 .rail {
     animation: rail 6s infinite linear;
 }
+.rail2 {
+    animation: rail2 3s infinite linear;
+}
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -531,6 +534,17 @@ a {
         transform: translateX(-120px);
     }
 }
+@keyframes rail2 {
+    0% {
+         transform: translateY(-60px);
+     }
+     50% {
+         transform: translateY(-40px);
+     }
+     100% {
+         transform: translateY(-60px);
+     }
+ }
 .rounded-lg {
     border-radius: .5rem;
 }
@@ -661,7 +675,7 @@ footer a:hover,
 #why-us a:hover,
 #gallery .row .col-lg-8 a.h4:hover,
 #gallery .row .col-lg-4 a.h4:hover,
-.swiper.services .swiper-slide:hover .bi-share-fill {
+.swiper.services .swiper-slide:hover .bi-share-fill,#banner a:hover {
     color: #158be5 !important;
 }
 
