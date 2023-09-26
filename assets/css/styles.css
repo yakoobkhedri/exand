@@ -715,7 +715,7 @@ header ul li:hover a svg {
     right: -105px;
     opacity: 100%;
 }
-.link-scroll a:hover div.rounded-circle{
+.link-scroll a:hover div.rounded-circle,#services .swiper-slide>div:hover .number{
    background-color: #158be5;
 }
 /* video banner */
@@ -790,7 +790,7 @@ header ul li:hover a svg {
 #services .swiper-slide>div:hover a.border-gray,
 .why-us-row>div:hover .rounded-circle,
 .pagination a:hover,
-.pagination a.active {
+.pagination a.active,#services .swiper-slide>div:hover .number {
     color: black !important;
 }
 
@@ -932,7 +932,7 @@ header ul li:hover a svg {
     transform: rotate(45deg);
 }
 
-#services .swiper-slide>div:hover img,#services .swiper-slide>div:hover svg {
+#services .swiper-slide>div:hover img,#services .swiper-slide>div:hover > svg {
     filter: brightness(0)invert(1);
     transform: translateY(-9px);
 }
