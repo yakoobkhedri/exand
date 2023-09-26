@@ -450,7 +450,9 @@ a {
 .left-78 {
     left: -78px;
 }
-
+.left-160{
+    left: -160px;
+}
 .bottom-4 {
     bottom: -4px;
 }
@@ -482,7 +484,9 @@ a {
 .fill-white {
     fill: white;
 }
-
+.fill-main {
+    fill: #158be5;
+}
 .text-justify {
     text-align: justify;
 }
@@ -675,7 +679,7 @@ footer a:hover,
 #why-us a:hover,
 #gallery .row .col-lg-8 a.h4:hover,
 #gallery .row .col-lg-4 a.h4:hover,
-.swiper.services .swiper-slide:hover .bi-share-fill,#banner a:hover {
+.swiper.services .swiper-slide:hover .bi-share-fill,#banner a:hover,.contactBox a:hover {
     color: #158be5 !important;
 }
 
@@ -715,7 +719,7 @@ header ul li:hover a svg {
     right: -105px;
     opacity: 100%;
 }
-.link-scroll a:hover div.rounded-circle,#services .swiper-slide>div:hover .number{
+.link-scroll a:hover div.rounded-circle,#services .swiper-slide>div:hover .number,.contactBox:hover .number{
    background-color: #158be5;
 }
 /* video banner */
@@ -790,7 +794,7 @@ header ul li:hover a svg {
 #services .swiper-slide>div:hover a.border-gray,
 .why-us-row>div:hover .rounded-circle,
 .pagination a:hover,
-.pagination a.active,#services .swiper-slide>div:hover .number {
+.pagination a.active,#services .swiper-slide>div:hover .number,.contactBox:hover .number {
     color: black !important;
 }
 
@@ -878,7 +882,7 @@ header ul li:hover a svg {
     right: 0;
 }
 
-#services .swiper-slide>div:hover .hover-lines {
+#services .swiper-slide>div:hover .hover-lines,.contactBox>div:hover .hover-lines {
     border-left-width: 1px;
     border-right-width: 1px;
     height: 100%;
@@ -886,12 +890,12 @@ header ul li:hover a svg {
     width: 100%;
 }
 
-#services .swiper-slide>div:hover .hover-lines::after {
+#services .swiper-slide>div:hover .hover-lines::after,.contactBox>div:hover .hover-lines::after {
     transition: width .1s cubic-bezier(.19, 1, .22, 1)340ms;
     width: 50%;
 }
 
-#services .swiper-slide>div:hover .hover-lines::before {
+#services .swiper-slide>div:hover .hover-lines::before,.contactBox>div:hover .hover-lines::before {
     transition: width .1s cubic-bezier(.19, 1, .22, 1)340ms;
     width: 50%;
 }
@@ -1037,7 +1041,11 @@ header ul li:hover a svg {
     margin-bottom: 13px;
     margin-left: 13px !important;
 }
-
+/* contact page */
+.contactBox:hover > div{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px 5px #1953a5;
+}
 @media only screen and (max-width:1200px) {
     #menu{
         position: fixed;
