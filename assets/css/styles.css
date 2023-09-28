@@ -203,7 +203,13 @@ a {
 .w-41 {
     width: 41px;
 }
+.h-44 {
+    height: 44px
+}
 
+.w-44 {
+    width: 44px;
+}
 .w-51 {
     width: 51px;
 }
@@ -679,7 +685,8 @@ footer a:hover,
 #why-us a:hover,
 #gallery .row .col-lg-8 a.h4:hover,
 #gallery .row .col-lg-4 a.h4:hover,
-.swiper.services .swiper-slide:hover .bi-share-fill,#banner a:hover,.contactBox a:hover {
+.author a:hover,
+.swiper.services .swiper-slide:hover .bi-share-fill,#banner a:hover,.contactBox a:hover,#blog .blog-box .blog-link:hover,#blog .blog-box .blog-link:hover p {
     color: #158be5 !important;
 }
 
@@ -794,11 +801,12 @@ header ul li:hover a svg {
 #services .swiper-slide>div:hover a.border-gray,
 .why-us-row>div:hover .rounded-circle,
 .pagination a:hover,
-.pagination a.active,#services .swiper-slide>div:hover .number,.contactBox:hover .number {
+.pagination a.active,.socialIcon a:hover,#services .swiper-slide>div:hover .number,.contactBox:hover .number,.blog-box .read-more:hover,.blog-sidebar .read-more:hover {
     color: black !important;
+    border: 1px solid #1953a5!important;
 }
 
-.skills a::before,
+.skills a::before,.blog-box .read-more::before,.blog-sidebar .read-more::before,
 #services .swiper-slide>div a.bg-second::before {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
@@ -830,7 +838,7 @@ header ul li:hover a svg {
 }
 
 .skills a:hover::before,
-#services .swiper-slide>div:hover a.bg-second:before {
+#services .swiper-slide>div:hover a.bg-second:before,.blog-box .read-more:hover::before,.blog-sidebar .read-more:hover::before {
     -webkit-transform: translate3d(0%, 0, 0)skew(45deg);
     -khtml-transform: translate3d(0%, 0, 0)skew(45deg);
     -moz-transform: translate3d(0%, 0, 0)skew(45deg);
@@ -910,7 +918,7 @@ header ul li:hover a svg {
 }
 
 #services .swiper-slide>div a.border-gray::before,
-.pagination a::before {
+.pagination a::before,.socialIcon a::before {
     position: absolute;
     content: '';
     width: 0;
@@ -925,14 +933,15 @@ header ul li:hover a svg {
 }
 #services .swiper-slide>div:hover a.border-gray::before,
 .pagination a:hover:before,
-.pagination a.active:before {
+.pagination a.active:before,
+.socialIcon a:hover::before {
     width: 100%;
     height: 100%;
 }
 
 #services .swiper-slide>div:hover a.border-gray:hover svg,
 #gallery .row .col-lg-8 a:hover.rounded-circle svg,
-#gallery .row .col-lg-4 a:hover.rounded-circle svg {
+#gallery .row .col-lg-4 a:hover.rounded-circle svg,.read-more:hover svg {
     transform: rotate(45deg);
 }
 
@@ -984,7 +993,7 @@ header ul li:hover a svg {
 #gallery .row .col-lg-8 img,
 #gallery .row .col-lg-4 img,
 .swiper.services .swiper-slide img,
-#blog .swiper-slide img[alt="blog"] {
+#blog .swiper-slide img[alt="blog"],#blog .blog-box img[alt="blog"] {
     transform: scale(1.2);
     transition: all .4s;
 }
@@ -992,7 +1001,7 @@ header ul li:hover a svg {
 #gallery .row .col-lg-8:hover img,
 #gallery .row .col-lg-4:hover img,
 .swiper.services .swiper-slide:hover img,
-#blog .swiper-slide:hover img[alt="blog"] {
+#blog .swiper-slide:hover img[alt="blog"],#blog .blog-box:hover img[alt="blog"] {
     transform: scale(1);
     opacity: .7;
 }
@@ -1021,13 +1030,13 @@ header ul li:hover a svg {
     opacity: 100%;
 }
 
-#blog .swiper-slide .position-relative.overflow-hidden span {
+#blog .swiper-slide .position-relative.overflow-hidden span,#blog .blog-box .position-relative.overflow-hidden span {
     opacity: 0;
     transition: all .4s;
     z-index: 9;
 }
 
-#blog .swiper-slide:hover .position-relative.overflow-hidden span {
+#blog .swiper-slide:hover .position-relative.overflow-hidden span,#blog .blog-box:hover .position-relative.overflow-hidden span {
     opacity: 100%;
     margin-left: 14px !important;
 }
@@ -1041,10 +1050,21 @@ header ul li:hover a svg {
     margin-bottom: 13px;
     margin-left: 13px !important;
 }
+.subscribe.prev:hover svg {
+    transform: translateX(-13px);
+    margin-right: 0!important;
+}
 /* contact page */
 .contactBox:hover > div{
     transform: translateY(-5px);
     box-shadow: 0 10px 20px 5px #1953a5;
+}
+/* blog page */
+.bg-blogContact{
+    background-image: url('../img/bg-banner-widget.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 @media only screen and (max-width:1200px) {
     #menu{
