@@ -210,6 +210,9 @@ a {
 .w-44 {
     width: 44px;
 }
+.w-50percent{
+    width: 50%;
+}
 .w-51 {
     width: 51px;
 }
@@ -1091,6 +1094,9 @@ header ul li:hover a svg {
        border-bottom: 1px solid rgb(88, 88, 88);
        padding: 12px 0;
     }
+    #about .left-160{
+        left: 0;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -1110,6 +1116,9 @@ header ul li:hover a svg {
     #about .me-9 {
         margin-right: auto;
     }
+    #about img.left-160 {
+        width: 60% !important;
+      }
 }
 
 @media only screen and (max-width:768px) {
