@@ -806,16 +806,17 @@ header ul li:hover a svg {
 
 .skills a:hover,
 #services .swiper-slide>div:hover a.bg-second,
+.hover:hover a.bg-second,
 #services .swiper-slide>div:hover a.border-gray,
 .why-us-row>div:hover .rounded-circle,
-.pagination a:hover,
+.pagination a:hover,.hover:hover a.border-gray,
 .pagination a.active,.socialIcon a:hover,#services .swiper-slide>div:hover .number,.contactBox:hover .number,.blog-box .read-more:hover,.blog-sidebar .read-more:hover {
     color: black !important;
     border: 1px solid #1953a5!important;
 }
 
 .skills a::before,.blog-box .read-more::before,.blog-sidebar .read-more::before,
-#services .swiper-slide>div a.bg-second::before {
+#services .swiper-slide>div a.bg-second::before,.hover a.bg-second::before {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -846,6 +847,7 @@ header ul li:hover a svg {
 }
 
 .skills a:hover::before,
+.hover:hover a.bg-second::before,
 #services .swiper-slide>div:hover a.bg-second:before,.blog-box .read-more:hover::before,.blog-sidebar .read-more:hover::before {
     -webkit-transform: translate3d(0%, 0, 0)skew(45deg);
     -khtml-transform: translate3d(0%, 0, 0)skew(45deg);
@@ -855,6 +857,9 @@ header ul li:hover a svg {
     transform: translate3d(0%, 0, 0)skew(45deg);
 }
 /* services */
+.hover{
+    position: relative;
+}
 .hover-lines {
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
@@ -906,27 +911,27 @@ header ul li:hover a svg {
     width: 100%;
 }
 
-#services .swiper-slide>div:hover .hover-lines::after,.contactBox>div:hover .hover-lines::after {
+#services .swiper-slide>div:hover .hover-lines::after,.contactBox>div:hover .hover-lines::after,.hover:hover .hover-lines::after {
     transition: width .1s cubic-bezier(.19, 1, .22, 1)340ms;
     width: 50%;
 }
 
-#services .swiper-slide>div:hover .hover-lines::before,.contactBox>div:hover .hover-lines::before {
+#services .swiper-slide>div:hover .hover-lines::before,.contactBox>div:hover .hover-lines::before,.hover:hover .hover-lines::before {
     transition: width .1s cubic-bezier(.19, 1, .22, 1)340ms;
     width: 50%;
 }
 
-#services .swiper-slide>div a.bg-second::before {
+#services .swiper-slide>div a.bg-second::before,.hover a.bg-second::before {
     z-index: 2;
 }
 
-#services .swiper-slide>div a.border-gray {
+#services .swiper-slide>div a.border-gray,.hover a.border-gray {
     position: relative;
     z-index: 9;
 }
 
 #services .swiper-slide>div a.border-gray::before,
-.pagination a::before,.socialIcon a::before {
+.pagination a::before,.socialIcon a::before,.hover a.border-gray::before {
     position: absolute;
     content: '';
     width: 0;
@@ -939,7 +944,7 @@ header ul li:hover a svg {
 #services .plan .swiper-slide>div a.border-gray::before {
     border-radius: 50rem;
 }
-#services .swiper-slide>div:hover a.border-gray::before,
+#services .swiper-slide>div:hover a.border-gray::before,.hover:hover a.border-gray::before,
 .pagination a:hover:before,
 .pagination a.active:before,
 .socialIcon a:hover::before {
@@ -949,11 +954,11 @@ header ul li:hover a svg {
 
 #services .swiper-slide>div:hover a.border-gray:hover svg,
 #gallery .row .col-lg-8 a:hover.rounded-circle svg,
-#gallery .row .col-lg-4 a:hover.rounded-circle svg,.read-more:hover svg {
+#gallery .row .col-lg-4 a:hover.rounded-circle svg,.read-more:hover svg,.hover a.border-gray:hover svg {
     transform: rotate(45deg);
 }
 
-#services .swiper-slide>div:hover img,#services .swiper-slide>div:hover > svg {
+#services .swiper-slide>div:hover img,#services .swiper-slide>div:hover > svg,.hover:hover img {
     filter: brightness(0)invert(1);
     transform: translateY(-9px);
 }
@@ -1001,6 +1006,7 @@ header ul li:hover a svg {
 #gallery .row .col-lg-8 img,
 #gallery .row .col-lg-4 img,
 .swiper.services .swiper-slide img,
+.hover img,
 #blog .swiper-slide img[alt="blog"],#blog .blog-box img[alt="blog"] {
     transform: scale(1.2);
     transition: all .4s;
@@ -1089,6 +1095,22 @@ header ul li:hover a svg {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     border-radius: 50%;
   }
+  /* service page */
+  .bg-brand {
+    background-image: url('../img/brand.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.bg-brand::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: 70%;
+  inset: 0;
+}
 @media only screen and (max-width:1200px) {
     #menu{
         position: fixed;
