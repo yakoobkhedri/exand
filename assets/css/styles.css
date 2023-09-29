@@ -973,6 +973,12 @@ header ul li:hover a svg {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.why-us-bigImg2{
+    background-image: url('../img/banner-2.jpg');
+    background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* gallery */
 #gallery .row .col-lg-8:hover a.rounded-circle,
 #gallery .row .col-lg-4:hover a.rounded-circle {
@@ -1076,6 +1082,12 @@ header ul li:hover a svg {
 /* blog page */
 .bg-blogContact{
     background-image: url('../img/bg-banner-widget.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-title{
+    background-image: url('../img/bg-page-title.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
