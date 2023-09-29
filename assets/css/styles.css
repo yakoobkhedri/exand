@@ -1074,6 +1074,13 @@ header ul li:hover a svg {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* faq page */
+.bg-faq {
+    background-image: url('../img/banner-2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media only screen and (max-width:1200px) {
     #menu{
         position: fixed;
