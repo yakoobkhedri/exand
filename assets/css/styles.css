@@ -1184,13 +1184,20 @@ header ul li:hover a svg {
     #about img.w-50{
         width: 100%!important;
     }
+    .banner-title .h-51.border-main{
+        height: auto;
+        border: 0 solid transparent!important;
+    }
+  
 }
 
 @media only screen and (max-width:576px) {
     #banner .w-184 {
         width: 112px;
     }
-
+    .banner-title .w-184 {
+        width: 184px!important;
+    }
     #video-banner .w-101 {
         width: 60px;
     }
