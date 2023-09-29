@@ -898,7 +898,7 @@ header ul li:hover a svg {
     right: 0;
 }
 
-#services .swiper-slide>div:hover .hover-lines,.contactBox>div:hover .hover-lines {
+#services .swiper-slide>div:hover .hover-lines,.contactBox>div:hover .hover-lines,.hover:hover .hover-lines {
     border-left-width: 1px;
     border-right-width: 1px;
     height: 100%;
