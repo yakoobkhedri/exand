@@ -22,6 +22,7 @@ body {
     font-family: "IRANSans-Regular";
     user-select: none;
     background-color: #011f4b;
+    overflow-x: hidden;
 }
 
 .font-bold {
