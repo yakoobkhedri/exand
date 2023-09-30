@@ -810,12 +810,12 @@ header ul li:hover a svg {
 #services .swiper-slide>div:hover a.border-gray,
 .why-us-row>div:hover .rounded-circle,
 .pagination a:hover,.hover:hover a.border-gray,
-.pagination a.active,.socialIcon a:hover,#services .swiper-slide>div:hover .number,.contactBox:hover .number,.blog-box .read-more:hover,.blog-sidebar .read-more:hover {
+.pagination a.active,.socialIcon a:hover,#services .swiper-slide>div:hover .number,.contactBox:hover .number,.read-more:hover,.blog-sidebar .read-more:hover {
     color: black !important;
     border: 1px solid #1953a5!important;
 }
 
-.skills a::before,.blog-box .read-more::before,.blog-sidebar .read-more::before,
+.skills a::before,.read-more::before,.blog-sidebar .read-more::before,
 #services .swiper-slide>div a.bg-second::before,.hover a.bg-second::before {
     -webkit-border-radius: 3px;
     -khtml-border-radius: 3px;
@@ -848,7 +848,7 @@ header ul li:hover a svg {
 
 .skills a:hover::before,
 .hover:hover a.bg-second::before,
-#services .swiper-slide>div:hover a.bg-second:before,.blog-box .read-more:hover::before,.blog-sidebar .read-more:hover::before {
+#services .swiper-slide>div:hover a.bg-second:before,.read-more:hover::before,.blog-sidebar .read-more:hover::before {
     -webkit-transform: translate3d(0%, 0, 0)skew(45deg);
     -khtml-transform: translate3d(0%, 0, 0)skew(45deg);
     -moz-transform: translate3d(0%, 0, 0)skew(45deg);

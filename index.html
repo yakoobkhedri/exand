@@ -11,7 +11,7 @@
   <title>Home</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
   <!-- overlay -->
   <div id="overlay" class="position-fixed top-0 end-0 bottom-0 start-0 bg-black"></div>
@@ -427,10 +427,10 @@
                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
                 </svg>
                 <p class="mb-0 text-white fw-bold"> We CreateDigital Marketplace</p>
-                <span class="position-absolute d-block w-9 h-9 border-main left-5 top-4 body-bg"></span>
-                <span class="position-absolute d-block w-9 h-9 border-main left-5 bottom-4 body-bg"></span>
-                <span class="position-absolute d-block w-9 h-9 border-main right-5 top-4 body-bg"></span>
-                <span class="position-absolute d-block w-9 h-9 border-main right-5 bottom-4 body-bg"></span>
+                <span class="position-absolute d-block w-9 h-9 border-main left-5 top-4 body-bg d-md-block d-none"></span>
+                <span class="position-absolute d-block w-9 h-9 border-main left-5 bottom-4 body-bg d-md-block d-none"></span>
+                <span class="position-absolute d-block w-9 h-9 border-main right-5 top-4 body-bg d-md-block d-none"></span>
+                <span class="position-absolute d-block w-9 h-9 border-main right-5 bottom-4 body-bg d-md-block d-none"></span>
               </a>
             </div>
           </div>
@@ -453,275 +453,441 @@
               class="flex-shrink-0 d-block w-95"></a>
           <p class="mb-0">Monthly planes</p>
         </div>
-        <h3 class="font-bold fs-52 text-white text-center"> planes</h3>
-        <div class="swiper plan mt-5 px-2 py-3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Professional
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
+        <h3 class="font-bold display-3 text-white text-center"> planes</h3>
+        <div class="row mx-0 g-5 mt-5">
+          <div class="col-xl-4 col-md-6">
+            <div class="border-gray hover rounded-3 px-3 py-3">
+              <div class="hover-lines"></div>
+              <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+               <div>
+                <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>1.99</p>
+                <p class="text-white font-bold h5">Basic Plan</p>
+               </div>
+               <p class="main-text fw-bold">/Per Month</p>
               </div>
+              <ul class="p-0 mt-4 list-unstyled">
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Unlimited paid ticket
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Google analytics integration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Customizable registration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                    500 Email invitations event
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                    Event reminders
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                    Registration form
+                  </p>
+                </li>
+              </ul>
+              <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                  </path>
+                </svg>
+              </a>
             </div>
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award-fill text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Premium
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="border-gray hover rounded-3 px-3 py-3 position-relative">
+              <div class="position-absolute rounded-pill py-2 px-4 main-bg text-center font-bold top-29 mt-2 z-10 end-0 me-5"> Most Popular</div>
+              <div class="hover-lines"></div>
+              <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+               <div>
+                <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>2.99</p>
+                <p class="text-white font-bold h5">Standard Plan</p>
+               </div>
+               <p class="main-text fw-bold">/Per Month</p>
               </div>
+              <ul class="p-0 mt-4 list-unstyled">
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Unlimited paid ticket
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Google analytics integration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Customizable registration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    500 Email invitations event
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Event reminders
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Registration form
+                  </p>
+                </li>
+              </ul>
+              <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                  </path>
+                </svg>
+              </a>
             </div>
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Normal
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="border-gray hover rounded-3 px-3 py-3">
+              <div class="hover-lines"></div>
+              <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+               <div>
+                <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>5.99</p>
+                <p class="text-white font-bold h5">Extended Plan</p>
+               </div>
+               <p class="main-text fw-bold">/Per Month</p>
               </div>
+              <ul class="p-0 mt-4 list-unstyled">
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Unlimited paid ticket
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Google analytics integration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Customizable registration
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    500 Email invitations event
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Event reminders
+                  </p>
+                </li>
+                <li class="d-flex align-items-center gap-3 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                  </svg>
+                  <p class="text-gray fw-bold mb-0 fs-18">
+                    Registration form
+                  </p>
+                </li>
+              </ul>
+              <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                  </path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-     <!-- marketing plan -->
-     <section id="services" class="pt-5 mt-5">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-center text-white fw-bold fs-18">
-          <a class="d-block flex-shrink-0"><img alt="icon" src="assets/img/logo.png"
-              class="flex-shrink-0 d-block w-95"></a>
-          <p class="mb-0">Marketing planes</p>
-        </div>
-        <h3 class="font-bold fs-52 text-white text-center">planes</h3>
-        <div class="swiper plan mt-5 px-2 py-3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Professional
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
-              </div>
+        <!-- Marketing plan -->
+        <section id="services" class="pt-5 mt-5">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-center text-white fw-bold fs-18">
+              <a class="d-block flex-shrink-0"><img alt="icon" src="assets/img/logo.png"
+                  class="flex-shrink-0 d-block w-95"></a>
+              <p class="mb-0">Marketing planes</p>
             </div>
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award-fill text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Premium
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
+            <h3 class="font-bold display-3 text-white text-center"> planes</h3>
+            <div class="row g-5 mt-5">
+              <div class="col-xl-4 col-md-6">
+                <div class="border-gray hover rounded-3 px-3 py-3">
+                  <div class="hover-lines"></div>
+                  <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+                   <div>
+                    <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>1.99</p>
+                    <p class="text-white font-bold h5">Basic Plan</p>
+                   </div>
+                   <p class="main-text fw-bold">/Per Month</p>
+                  </div>
+                  <ul class="p-0 mt-4 list-unstyled">
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Unlimited paid ticket
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Google analytics integration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Customizable registration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                        500 Email invitations event
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                        Event reminders
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18 text-decoration-line-through">
+                        Registration form
+                      </p>
+                    </li>
+                  </ul>
+                  <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                    <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="border-gray rounded-3 px-3 py-3">
-                <div class="hover-lines"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" fill="currentColor" class="bi bi-award text-white mx-auto d-block transition" viewBox="0 0 16 16">
-                  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
-                  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-                </svg>
-                <h2 class="text-center main-text mt-4 font-bold">200$</h2>
-                <h4 class="text-center text-danger mt-2 text-decoration-line-through">300$</h4>
-                <a
-                  class="bg-second overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center">
-                  <p class="mb-0 position-relative z-10">
-                    Normal
-                  </p>
-                </a>
-                <ul class="text-white mt-4 lh-lg fw-bold h5">
-                  <li>
-                    24 Hours
-                  </li>
-                  <li>
-                    Multi User
-                  </li>
-                  <li>
-                   Hight Speed
-                  </li>
-                  <li>
-                   Hight Performance
-                  </li>
-                  <li>
-                    Attractive Design
-                  </li>
-                  <li>
-                    24 Month Warranty
-                  </li>
-                </ul>
-                <a
-                  class="d-flex align-items-center font-bold justify-content-center mt-4 text-gray border-gray rounded-pill h-70 mx-auto">
-                 Buy
-                </a>
+              <div class="col-xl-4 col-md-6">
+                <div class="border-gray hover rounded-3 px-3 py-3 position-relative">
+                  <div class="position-absolute rounded-pill py-2 px-4 main-bg text-center font-bold top-29 mt-2 z-20 end-0 me-5"> Most Popular</div>
+                  <div class="hover-lines"></div>
+                  <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+                   <div>
+                    <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>2.99</p>
+                    <p class="text-white font-bold h5">Standard Plan</p>
+                   </div>
+                   <p class="main-text fw-bold">/Per Month</p>
+                  </div>
+                  <ul class="p-0 mt-4 list-unstyled">
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Unlimited paid ticket
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Google analytics integration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Customizable registration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        500 Email invitations event
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Event reminders
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Registration form
+                      </p>
+                    </li>
+                  </ul>
+                  <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                    <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="border-gray hover rounded-3 px-3 py-3">
+                  <div class="hover-lines"></div>
+                  <div class="d-flex align-items-center justify-content-between border-b-main pb-4">
+                   <div>
+                    <p class="text-white h1 font-bold"><span class="main-text me-2">$</span>5.99</p>
+                    <p class="text-white font-bold h5">Extended Plan</p>
+                   </div>
+                   <p class="main-text fw-bold">/Per Month</p>
+                  </div>
+                  <ul class="p-0 mt-4 list-unstyled">
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Unlimited paid ticket
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Google analytics integration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Customizable registration
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        500 Email invitations event
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Event reminders
+                      </p>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg main-text" viewBox="0 0 16 16">
+                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                      </svg>
+                      <p class="text-gray fw-bold mb-0 fs-18">
+                        Registration form
+                      </p>
+                    </li>
+                  </ul>
+                  <a class="d-flex align-items-center gap-2 bg-second justify-content-center overflow-hidden position-relative rounded-3 py-3 w-100 d-block mt-4 text-white font-bold text-center me-auto">
+                    <p class="mb-0 position-relative z-10 transition">Sign Up For Free </p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right transition position-relative z-10" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
     <!-- video banner -->
     <section id="video-banner" class="py-5 my-5">
@@ -816,7 +982,7 @@
               class="flex-shrink-0 d-block w-95"></a>
           <p class="mb-0">Best Of Service</p>
         </div>
-        <h3 class="font-bold fs-52 text-white text-center"> All Professional We’re Offering Best <br
+        <h3 class="font-bold display-3 text-white text-center"> All Professional We’re Offering Best <br
             class="d-none d-md-inline-block"> Solutions &
           Services </h3>
         <div class="swiper services mt-5 px-2 py-3">
@@ -951,7 +1117,7 @@
                   class="flex-shrink-0 d-block w-95"></a>
               <p class="mb-0">ABOUT COMPANY </p>
             </div>
-            <h3 class="font-bold fs-52 text-white">We Do Work<br class="d-none d-md-inline-block"> smart Digital<br
+            <h3 class="font-bold display-3 text-white">We Do Work<br class="d-none d-md-inline-block"> smart Digital<br
                 class="d-none d-md-inline-block"> agency</h3>
           </div>
           <div class="col-lg-7 bg-pttern1 py-5">
@@ -1015,7 +1181,7 @@
                   class="flex-shrink-0 d-block w-95"></a>
               <p class="mb-0">Why Choose Us </p>
             </div>
-            <h3 class="font-bold fs-52 text-white my-3"> Make your Service.</h3>
+            <h3 class="font-bold display-3 text-white my-3"> Make your Service.</h3>
             <p class="text-gray fw-bold fs-18">For each business, we take a bespoke approach to developing change within
               the organisation, often with the common goal.</p>
             <div class="mt-5 why-us-row">
@@ -1122,7 +1288,7 @@
               class="flex-shrink-0 d-block w-95"></a>
           <p class="mb-0">Recent Works Gallery</p>
         </div>
-        <h3 class="font-bold fs-52 text-white text-center"> All Professional Lat’s Look Our <br
+        <h3 class="font-bold display-3 text-white text-center"> All Professional Lat’s Look Our <br
             class="d-none d-md-inline-block"> Recent Project House
         </h3>
         <div class="row g-4 mt-3">
@@ -1248,7 +1414,7 @@
                   class="flex-shrink-0 d-block w-95"></a>
               <p class="mb-0"> Team Member </p>
             </div>
-            <h3 class="font-bold fs-52 text-white my-3">Our Team Member.</h3>
+            <h3 class="font-bold display-3 text-white my-3">Our Team Member.</h3>
             <p class="text-gray fw-bold fs-18">Fusce eget accumsan urna, id rhoncus tortor. Phasellus interdum leo non
               orci fringilla, suscipit vestibulum enim elementum.</p>
           </div>
@@ -1533,14 +1699,14 @@
               class="flex-shrink-0 d-block w-95"></a>
           <p class="mb-0">What Clients Says</p>
         </div>
-        <h3 class="font-bold fs-52 text-white text-center"> Best Of Our Lat’s Look Clients <br
+        <h3 class="font-bold display-3 text-white text-center"> Best Of Our Lat’s Look Clients <br
             class="d-none d-md-inline-block"> Latest Testimonials
         </h3>
         <div class="position-relative">
           <div class="swiper testimonials mt-5 p-2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="border-gray rounded-3 px-5 py-3">
+                <div class="border-gray rounded-3 px-3 px-lg-5 py-3">
                   <div class="d-flex align-items-center mb-3 justify-content-between">
                     <div class="d-flex align-items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1590,7 +1756,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="border-gray rounded-3 px-5 py-3">
+                <div class="border-gray rounded-3 px-3 px-lg-5 py-3">
                   <div class="d-flex align-items-center mb-3 justify-content-between">
                     <div class="d-flex align-items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1640,7 +1806,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="border-gray rounded-3 px-5 py-3">
+                <div class="border-gray rounded-3 px-3 px-lg-5 py-3">
                   <div class="d-flex align-items-center mb-3 justify-content-between">
                     <div class="d-flex align-items-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1704,7 +1870,7 @@
               class="flex-shrink-0 d-block w-95"></a>
           <p class="mb-0">Latest News & Blogs </p>
         </div>
-        <h3 class="font-bold fs-52 text-white text-center"> We provide Advanced frequency <br
+        <h3 class="font-bold display-3 text-white text-center"> We provide Advanced frequency <br
             class="d-none d-md-inline-block"> and questions
         </h3>
         <div class="position-relative">
@@ -1901,7 +2067,7 @@
                   class="flex-shrink-0 d-block w-95"></a>
               <p class="mb-0"> Get InTouch </p>
             </div>
-            <h3 class="font-bold fs-52 text-white my-3"> Subscribe Now.</h3>
+            <h3 class="font-bold display-3 text-white my-3"> Subscribe Now.</h3>
             <p class="text-gray fw-bold fs-18 mb-0">Fusce eget accumsan urna, id rhoncus tortor. interdum leo non orci
               fringilla suscipit.</p>
           </div>
