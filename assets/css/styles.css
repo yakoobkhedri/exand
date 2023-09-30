@@ -685,6 +685,7 @@ input[type='number'] {
 }
 /* header */
 header ul li:hover a,
+header ul li.active a,
 .site-social a:hover svg,
 footer a:hover,
 #blog .swiper-slide a:hover p,
@@ -730,9 +731,14 @@ header ul li:hover a svg {
 .link-scroll a:hover{
    border: 2px solid #158be5;
 }
+.link-scroll .label {
+ z-index: -9;
+ visibility: hidden;
+}
 .link-scroll a:hover .label{
     right: -105px;
     opacity: 100%;
+    visibility: visible;
 }
 .link-scroll a:hover div.rounded-circle,#services .swiper-slide>div:hover .number,.contactBox:hover .number{
    background-color: #158be5;
