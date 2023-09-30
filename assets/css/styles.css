@@ -982,7 +982,7 @@ header ul li:hover a svg {
 /* gallery */
 #gallery .row .col-lg-8:hover a.rounded-circle,
 #gallery .row .col-lg-4:hover a.rounded-circle {
-    left: 47%;
+    left: 42%;
     top: 33%;
     width: 70px;
     height: 70px;
@@ -1168,6 +1168,9 @@ header ul li:hover a svg {
     #about img.left-160 {
         width: 60% !important;
       }
+      iframe{
+          height: 400px;
+      }
 }
 
 @media only screen and (max-width:768px) {
@@ -1184,7 +1187,7 @@ header ul li:hover a svg {
     #about img.w-50{
         width: 100%!important;
     }
-    .banner-title .h-51.border-main{
+    #banner .h-51.border-main{
         height: auto;
         border: 0 solid transparent!important;
     }
@@ -1195,7 +1198,7 @@ header ul li:hover a svg {
     #banner .w-184 {
         width: 112px;
     }
-    .banner-title .w-184 {
+    .banner-title .w-184,.portfolio.w-184 {
         width: 184px!important;
     }
     #video-banner .w-101 {
