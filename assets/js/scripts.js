@@ -18,6 +18,8 @@ overlay.addEventListener('click',function () {
     overlay.classList.remove('active');
 })
 
+// aos
+  AOS.init();
 
 // swiper
 
