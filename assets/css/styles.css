@@ -25,7 +25,7 @@ body {
     overflow-x: hidden;
 }
 section{
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .font-bold {
     font-family: "IRANSans-Bold";
