@@ -24,9 +24,7 @@ body {
     background-color: #011f4b;
     overflow-x: hidden;
 }
-section{
-    overflow-y: hidden;
-}
+
 .font-bold {
     font-family: "IRANSans-Bold";
 }
@@ -1219,6 +1217,9 @@ header ul li:hover a svg {
     }
     #gallery .row .col-lg-8:hover a.rounded-circle {
         top: 10%;
+    }
+    section{
+        overflow: hidden;
     }
 }
 
